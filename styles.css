@@ -1,0 +1,127 @@
+body {
+    color: #ffffff;
+    background: url('bg2.png') center/cover no-repeat;
+
+}
+
+.front {
+    min-height: 100vh;
+    width: 100%;
+    background: url('bg2.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    font-family: "Momo Trust Display", sans-serif;
+    padding : 20px;
+
+}
+
+.front h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.front h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.front h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.front p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-section {
+    padding: 80px 0;
+}
+
+.btn-main {
+    background: #ffffff;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-bar,
+.bottom-bar {
+    height: 80px;
+    background: #000000;
+}
+
+.navbar {
+    height: 80px;
+    background: #000000;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+    margin: 0 15px;
+}
+
+
+
+.no-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.content-card {
+    background-color: #282525cf;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+
+    .content-card .col-md-4,
+    .content-card .col-md-8 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .no-scroll {
+        height: auto;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .front {
+        height: auto;                
+        justify-content: flex-start; 
+        padding: 80px 20px;          
+        background-size: cover;      
+        background-position: center;
+        background-repeat: no-repeat; 
+    }
+}
